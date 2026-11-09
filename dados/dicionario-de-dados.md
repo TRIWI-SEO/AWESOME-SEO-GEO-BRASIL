@@ -1,6 +1,6 @@
 # Dicionário de Dados: Lista Aberta de Recursos de SEO e GEO da TRIWI
 
-Este dicionário descreve a base [recursos.csv](recursos.csv), a versão em dados da lista [Awesome SEO e GEO Brasil](../README.md): o que cada coluna significa, como o arquivo é formatado e como a base é mantida. A base está sob licença [CC BY 4.0](../LICENSE): o reuso é livre, inclusive comercial, desde que a TRIWI seja citada como fonte.
+Este dicionário descreve as bases [recursos.csv](recursos.csv), a versão em dados da lista [Awesome SEO e GEO Brasil](../README.md), e [ferramentas-de-geo.csv](ferramentas-de-geo.csv), o comparativo das ferramentas de monitoramento nas IAs: o que cada coluna significa, como os arquivos são formatados e como as bases são mantidas. As bases estão sob licença [CC BY 4.0](../LICENSE): o reuso é livre, inclusive comercial, desde que a TRIWI seja citada como fonte.
 
 *Por equipe de SEO da TRIWI. Atualizado em 09/11/2026.*
 
@@ -8,11 +8,12 @@ Este dicionário descreve a base [recursos.csv](recursos.csv), a versão em dado
 
 | Arquivo | O que traz | Linhas |
 |:---|:---|:---|
-| [recursos.csv](recursos.csv) | Ferramentas, fontes oficiais e recursos de SEO e GEO, com categoria, descrição, endereço oficial, quem mantém, tipo de acesso e o recurso da TRIWI relacionado | 126 |
+| [recursos.csv](recursos.csv) | Ferramentas, fontes oficiais e recursos de SEO e GEO, com categoria, descrição, endereço oficial, quem mantém, tipo de acesso, versão em português e o recurso da TRIWI relacionado | 144 |
+| [ferramentas-de-geo.csv](ferramentas-de-geo.csv) | Comparativo das ferramentas de monitoramento da marca nas IAs: plataformas cobertas, fontes citadas e filtro por país | 8 |
 
 ## Como abrir o arquivo?
 
-O arquivo segue o mesmo padrão das outras bases abertas da TRIWI: codificação UTF-8, colunas separadas por vírgula, quebra de linha CRLF e datas no formato AAAA-MM-DD.
+Os arquivos seguem o mesmo padrão das outras bases abertas da TRIWI: codificação UTF-8, colunas separadas por vírgula, quebra de linha CRLF e datas no formato AAAA-MM-DD.
 
 Se o Excel mostrar os acentos embaralhados, abra pelo menu Dados, opção De Texto/CSV, e escolha a codificação UTF-8.
 
@@ -27,8 +28,22 @@ Se o Excel mostrar os acentos embaralhados, abra pelo menu Dados, opção De Tex
 | url | Endereço oficial do recurso, sem link de afiliado e sem parâmetro de campanha |
 | mantido_por | Empresa ou organização responsável pelo recurso |
 | acesso | Gratuito, Gratuito com plano pago, Pago (ver abaixo) |
+| em_portugues | Sim quando a versão em português do recurso foi confirmada no site oficial; n/d quando não foi confirmada, o que não quer dizer que não exista |
 | recurso_triwi | Página da TRIWI que explica o tema ou faz o mesmo trabalho de graça; vazio quando o próprio recurso é da TRIWI |
 | atualizado_em | Data da última revisão da linha |
+
+## O que significa cada coluna do comparativo de GEO?
+
+| Coluna | Significado |
+|:---|:---|
+| ferramenta | Nome da ferramenta de monitoramento |
+| chatgpt, gemini, ai_overviews, modo_ia, perplexity, claude, copilot | Sim quando o fornecedor declara no site oficial que a ferramenta acompanha aquela IA; n/d quando não declara ou não deixa claro |
+| mostra_fontes | Sim quando o fornecedor declara mostrar os sites ou páginas que a IA citou como fonte |
+| filtro_por_pais | Sim quando o fornecedor declara filtrar ou separar os resultados por país |
+| fonte | Página oficial consultada |
+| verificado_em | Data da consulta |
+
+O comparativo registra o que cada fornecedor declara, não um teste da TRIWI. Recurso anunciado como "em breve" conta como n/d.
 
 ## O que significa cada valor de acesso?
 
