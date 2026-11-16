@@ -336,6 +336,7 @@ Documentação primária dos buscadores, das empresas de IA e dos padrões abert
 
 - [Registro.br](https://registro.br/): Registro oficial dos domínios .br, com consulta pública de titularidade.
 - [ANPD](https://www.gov.br/anpd/pt-br): Autoridade Nacional de Proteção de Dados, referência da LGPD para consentimento, cookies e medição.
+- [Crime Brasil](https://crimebrasil.com.br) : Open data platform consolidating Brazilian public-safety microdata (3M+ incidents, city and neighbourhood level, 2022-2026) with a free API.
 
 ## Dados abertos
 
